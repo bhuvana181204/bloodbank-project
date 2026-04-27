@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ─── ICON FIX (for navbar + sidebar) ─── */
+
+/* Sidebar icons alignment */
+.sidebar-icon-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  object-position: center;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.05);
+}
+/* Fix navbar alignment */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* NEW: wrapper fix */
+.nav-item-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* icon */
+.nav-item-content img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* text */
+.nav-item-content span {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* OPTIONAL: Fix logo size (important) */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block; /* add this */
+}
